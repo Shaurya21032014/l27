@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            sorting numbers
+
+        </title>
+    </head>
+
+    <body>
+        <button onclick="ascending()">ascending</button>
+        <button onclick="descending()">descending</button>
+         <h1 id="result"></h1>
+         <script>
+            var marks = [78,45984854687604867038467407630876430876408673807653876085376053876530867350867430867340864086743086749806,948743096706847306780657064706753867586756870687560837608376037609537609537605760539760397603,374069873486740867408674086743067308470847685,69397398693846883484984399839893868,769476394764994767463767]
+
+            function ascending() {
+              marks.sort(function  (a, b) {
+                return a - b 
+              })
+              document.getElementById("result").innerHTML = marks  
+            }
+
+              function descending() {
+                    marks.sort(function (a, b) {
+                        return b - a
+                    })
+                    document.getElementById("result").innerHTML = marks 
+                }
+
+
+
+         </script>
+
+        </button>
+    </body>
+</html>
